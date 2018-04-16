@@ -18,10 +18,247 @@
     <link rel="stylesheet" href="custom.css">
     <link rel="stylesheet" href="nav.css">
     <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Barrio|Overlock+SC" rel="stylesheet">
 </head>
 
-<body>
+<style>
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    
+    /*  Small +  */
+     @media(min-width: 0px){
+       .row .glyphicon {
+        font-size: 50px;
+    }
+    }
+    @media(min-width: 768px){
+      h1 {
+        font-size: 50px;
+      }
+      h2 {
+        font-size: 35px;
+      }
+       .row .glyphicon {
+        font-size: 60px;
+      
+    }
+    }
+    
+    /* median + */
+    @media(min-width: 992px){
+      h1 {
+        font-size: 70px;
+      }
+      h2 {
+        font-size: 55px; 
+      }
+      .row .glyphicon {
+        font-size: 70px;
+      
+    }
+      
+    /* large + */
+    }
+    @media (min-width: 1200px){
+      h1 {
+        font-size: 100px;
+      }
+      h2 {
+        font-size: 85px; 
+      }
+      .row .glyphicon {
+        font-size: 80px;
+    }
+    }
 
+    .container {
+        width: 100%;
+    }
+
+    #home {
+        padding-top: 200px;
+        display: table;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient( rgba(246, 254, 255, 0.5),
+        rgba(246, 240, 255, 0.75)),
+        url(./img/balloon-1.jpg) no-repeat center;
+        background-size: cover;
+
+    }
+
+    h1 {
+        font-family: 'Barrio', cursive;
+        color: blue;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        font-family: 'Overlock SC', cursive;
+        color: black;
+        text-align: center;
+    }
+
+    #info {
+        width: 100%;
+    }
+    
+     .row .glyphicon {
+        color: red;
+        margin-top: 30px;
+    
+    }
+    .bg-pink {
+        background-color: #FFE4E1;
+    }
+
+    .bg-blue {
+        background-color: #d8f0f3;
+    }
+
+    
+
+    .row {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+</style>
+<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<!--Navigational bar-->
+
+
+<!--fixed container-->
+<nav class="navbar navbar-default navbar-fixed-top">
+
+    <!--icon-bar-button-->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">Skydance Hot Air Balloon Rides</a>
+           
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#info">Info <span class= "glyphicon glyphicon-info-sign "></a></li>
+                <li><a href="#gallery">Gallery <span class= "glyphicon glyphicon-picture"></a></li>
+                <li><a href="#testimonial">Testimonial <span class= "glyphicon glyphicon-user"></span></a></li>
+                <li><a href="#contact">Contact <span class="glyphicon glyphicon-earphone
+        "></span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!--Home Page-->
+<header id="home">
+    <div class="container">
+        <h1>Skydance Hot Air Balloon Rides</h1>      
+        <h2>Ride with the wind.</h2>
+        <h2>Dance with the sky.</h2>
+    </div>
+</header>
+
+<header id="info">
+    <div class="container bg-pink">
+
+        <div class="row">
+            <h1>Info</h1>
+            <div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-0">
+
+                <h2><span class="glyphicon glyphicon-time"></span> <br><br> Time</h2>
+                <p>Due to climatic conditions, we can safely fly only in the early morning hours with our primary season and most beautiful months being May through November. Since our launch times vary through the seasons, we ask all our guests to call
+                    ahead for the exact meeting time.</p>
+
+                <h2><span class="glyphicon glyphicon-plane"></span> <br><br> Flight</h2>
+                <p>Our actual flight time is approximately one to one and a half hours averaging closer to one and a half hours and we suggest to allow three to three and a half hours for the entire adventure.</p>
+
+            </div>
+
+            <div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-0">
+                <h2><span class="glyphicon glyphicon-cloud"></span> <br><br> Weather</h2>
+                <p>High winds and/or inclement weather prevent us from flying. We ask all our guests to contact us in the early afternoon prior to their scheduled flight between 12:00 noon and 2:00 p.m. to verify that the forecasted weather conditions will
+                    allow their balloon flight.</p>
+
+
+                <h2><span class="glyphicon glyphicon-bullhorn"></span> <br><br> Participation</h2>
+                <p>We encourage all of our guests, if they wish, to participate in both the inflation and deflation of the balloon. We have found it adds greatly to the fun of the entire ballooning experience.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+</header>
+
+<header id="gallary">
+    <div class="container">
+        <h1>Gallery</h1>
+    </div>
+</header>
+
+<header id="testimonial">
+    <div class="container bg-blue">
+        <h1>Testimonial</h1>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="jumbotron">
+                    <p>"Thank you for a wonderful memory. I was smiling the entire time. We shall always cherish that morning!" -- Joan H.</p>
+                </div>
+
+                <div class="jumbotron">
+                    <p>"I haven't come down to earth since our balloon ride. We are so pleased that we chose SHABR." -- Marsha N.</p>
+                </div>
+
+                <div class="jumbotron">
+                    <p>"What an awesome way to remember my anniversary! I know I will always remember this experience. Thank you again!" -- Mary C.</p>
+                </div>
+
+            </div>
+
+            <div class="col-sm-6">
+                <div class="jumbotron">
+                    <p>"What an experience!! I can't stop talking about it with my family. Thank you for the life-long memory!" -- Tammy P.</p>
+                </div>
+
+                <div class="jumbotron">
+                    <p>"Thanks so much for making our experience so perfect. I definitely want to go back again! -- Linda T.</p>
+                </div>
+
+                <div class="jumbotron">
+                    <p>"Thank you so much for the experience. It was delightful - awesome - wonderful - I will never forget my 80th Birthday!" -- Ethel E.</p>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+</header>
+
+
+<header id="contact">
+    <div class="container">
+        <h1>Contact</h1>
+    </div>
+</header>
+
+
+  </body>
 </body>
 
 </html>
