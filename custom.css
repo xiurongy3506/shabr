@@ -22,7 +22,7 @@
          .row p {
              font-family: 'Forum', cursive;
              color: black;
-             font-size: 15px;
+             font-size: 17px;
          }
      }
      
@@ -36,10 +36,9 @@
       }
        .row .glyphicon {
         font-size: 60px;
-      
     }
     .row p {
-        font-size: 16px;
+        font-size: 20px;
         margin: 5% 15%;
     }
     }
@@ -57,9 +56,10 @@
       
     }
     .row p {
-        font-size: 17px;
+        font-size: 23px;
         margin: 5% 15%;
     }
+    
     #myCarousel {
         width:80%;
         margin: auto;
@@ -78,7 +78,7 @@
         font-size: 90px;
     }
     .row p {
-        font-size: 18px;
+        font-size: 26px;
         margin: 5% 10%;
     }
     }
@@ -87,7 +87,7 @@
         width: 100%;
     }
     
-    .test-row{
+    .color-row{
         font-family: 'Neucha', cursive;
     }
 
@@ -131,10 +131,6 @@
     .test {
         width: 100%;
         background-color: #fceaf5;
-    }
-    
-    .row p {
-        font-size: 20px;
     }
     
      .description {
