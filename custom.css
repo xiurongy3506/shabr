@@ -1,0 +1,171 @@
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    
+   
+     @media(min-width: 0px) {
+         .row .glyphicon {
+             font-size: 50px;
+         }
+         h1 {
+             font-size: 45px;
+             margin: 5%;
+         }
+         h2 {
+             font-size: 30px;
+         }
+         .row .glyphicon {
+             font-size: 60px;
+         }
+         .row p {
+             font-family: 'Forum', cursive;
+             color: black;
+             font-size: 15px;
+         }
+     }
+     
+      /*  Small +  */
+    @media(min-width: 768px){
+      h1 {
+        font-size: 55px;
+      }
+      h2 {
+        font-size: 35px;
+      }
+       .row .glyphicon {
+        font-size: 60px;
+      
+    }
+    .row p {
+        font-size: 16px;
+        margin: 5% 15%;
+    }
+    }
+    
+    /* median + */
+    @media(min-width: 992px){
+      h1 {
+        font-size: 65px;
+      }
+      h2 {
+        font-size: 40px; 
+      }
+      .row .glyphicon {
+        font-size: 70px;
+      
+    }
+    .row p {
+        font-size: 17px;
+        margin: 5% 15%;
+    }
+      
+    /* large + */
+    }
+    @media (min-width: 1200px){
+      h1 {
+        font-size: 75px;
+      }
+      h2 {
+        font-size: 45px; 
+      }
+      .row .glyphicon {
+        font-size: 90px;
+    }
+    .row p {
+        font-size: 18px;
+        margin: 5% 15%;
+    }
+    }
+
+    .container {
+        width: 100%;
+    }
+    
+    .test-row{
+        font-family: 'Neucha', cursive;
+    }
+
+    #home {
+        display: table;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient( rgba(246, 254, 255, 0.5),
+        rgba(246, 240, 255, 0.75)),
+        url(./img/balloon-1.jpg) no-repeat center;
+        background-size: cover;
+
+    }
+    
+    #contact {
+        text-align: center;
+        background: linear-gradient( rgba(246, 254, 255, 0.5),
+        rgba(246, 240, 255, 0.75)),
+        url(./img/balloon-5.jpg) no-repeat center;
+        background-size: cover;
+    }
+
+
+    .center-text {
+        text-align: center;
+        vertical-align: middle;
+        display: table-cell;
+
+    }
+    
+    h1 {
+        font-family: 'Barrio', cursive;
+        color: blue;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        font-family: 'Overlock SC', cursive;
+        color: black;
+        text-align: center;
+    }
+
+    #info {
+        width: 100%;
+    }
+    
+     .row .glyphicon {
+        color: #3a8cea;
+        margin-top: 3px;
+    
+    }
+    .bg-pink {
+        background-color: #FED6DD;
+    }
+
+    .bg-blue {
+        background-color: #C7E4FF;
+    }
+    
+    .row {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+      
+    /*.test {*/
+    /*    width: 100%;*/
+    /*    background-color: white;*/
+    /*}*/
+    
+    .row p {
+        font-size: 20px;
+    }
+    
+     .description {
+         color: #fc0223;
+         text-shadow: 2px 2px 8px #c1c6ff;
+     }
+     
+     .contact-container {
+         text-shadow: 2px 5px 8px white;
+     }
+     
