@@ -60,6 +60,10 @@
         font-size: 17px;
         margin: 5% 15%;
     }
+    #myCarousel {
+        width:80%;
+        margin: auto;
+    }
       
     /* large + */
     }
@@ -75,7 +79,7 @@
     }
     .row p {
         font-size: 18px;
-        margin: 5% 15%;
+        margin: 5% 10%;
     }
     }
 
@@ -93,17 +97,69 @@
         height: 100%;
         background: linear-gradient( rgba(246, 254, 255, 0.5),
         rgba(246, 240, 255, 0.75)),
-        url(./img/balloon-1.jpg) no-repeat center;
+        url(./img/balloon-1.jpg) no-repeat center center fixed;
         background-size: cover;
 
     }
+
+    #info {
+        width: 100%;
+    }
     
-    #contact {
+     .row .glyphicon {
+        color: #3a8cea;
+        margin-top: 3px;
+    
+    }
+    .bg-pink {
+        background-color: #FED6DD;
+    }
+
+    .bg-blue {
+        background-color: #C7E4FF;
+        padding-bottom: 5%
+    }
+    
+    .row {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    
+      
+    .test {
+        width: 100%;
+        background-color: #fceaf5;
+    }
+    
+    .row p {
+        font-size: 20px;
+    }
+    
+     .description {
+         color: #fc0223;
+         text-shadow: 2px 2px 8px #c1c6ff;
+     }
+     
+     .contact-container {
+         text-shadow: 2px 5px 8px white;
+     }
+     
+      #fun-for-everyone {
+         background: linear-gradient( rgba(246, 254, 255, 0.5),
+        rgba(246, 240, 255, 0.75)),
+        url(./img/balloon-3.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+       
+      #contact {
         text-align: center;
         background: linear-gradient( rgba(246, 254, 255, 0.5),
         rgba(246, 240, 255, 0.75)),
-        url(./img/balloon-5.jpg) no-repeat center;
+        url(./img/balloon-5.jpg) no-repeat center center fixed;
         background-size: cover;
+        padding-top: 7%;
     }
 
 
@@ -126,46 +182,3 @@
         color: black;
         text-align: center;
     }
-
-    #info {
-        width: 100%;
-    }
-    
-     .row .glyphicon {
-        color: #3a8cea;
-        margin-top: 3px;
-    
-    }
-    .bg-pink {
-        background-color: #FED6DD;
-    }
-
-    .bg-blue {
-        background-color: #C7E4FF;
-    }
-    
-    .row {
-        margin-left: 50px;
-        margin-right: 50px;
-        margin-bottom: 100px;
-        text-align: center;
-    }
-      
-    /*.test {*/
-    /*    width: 100%;*/
-    /*    background-color: white;*/
-    /*}*/
-    
-    .row p {
-        font-size: 20px;
-    }
-    
-     .description {
-         color: #fc0223;
-         text-shadow: 2px 2px 8px #c1c6ff;
-     }
-     
-     .contact-container {
-         text-shadow: 2px 5px 8px white;
-     }
-     
