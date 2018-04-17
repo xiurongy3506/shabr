@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="custom.css">
     <link rel="stylesheet" href="nav.css">
     <script src="script.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Barrio|Overlock+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barrio|Neucha|Forum|Overlock+SC" rel="stylesheet">
 </head>
 
 <style>
@@ -28,15 +28,32 @@
         height: 100%;
     }
     
-    /*  Small +  */
-     @media(min-width: 0px){
-       .row .glyphicon {
-        font-size: 50px;
-    }
-    }
+   
+     @media(min-width: 0px) {
+         .row .glyphicon {
+             font-size: 50px;
+         }
+         h1 {
+             font-size: 45px;
+             margin: 5%;
+         }
+         h2 {
+             font-size: 30px;
+         }
+         .row .glyphicon {
+             font-size: 60px;
+         }
+         .row p {
+             font-family: 'Forum', cursive;
+             color: black;
+             font-size: 15px;
+         }
+     }
+     
+      /*  Small +  */
     @media(min-width: 768px){
       h1 {
-        font-size: 50px;
+        font-size: 55px;
       }
       h2 {
         font-size: 35px;
@@ -45,41 +62,56 @@
         font-size: 60px;
       
     }
+    .row p {
+        font-size: 16px;
+        margin: 5% 15%;
+    }
     }
     
     /* median + */
     @media(min-width: 992px){
       h1 {
-        font-size: 70px;
+        font-size: 65px;
       }
       h2 {
-        font-size: 55px; 
+        font-size: 40px; 
       }
       .row .glyphicon {
         font-size: 70px;
       
+    }
+    .row p {
+        font-size: 17px;
+        margin: 5% 15%;
     }
       
     /* large + */
     }
     @media (min-width: 1200px){
       h1 {
-        font-size: 100px;
+        font-size: 75px;
       }
       h2 {
-        font-size: 85px; 
+        font-size: 45px; 
       }
       .row .glyphicon {
-        font-size: 80px;
+        font-size: 90px;
+    }
+    .row p {
+        font-size: 18px;
+        margin: 5% 15%;
     }
     }
 
     .container {
         width: 100%;
     }
+    
+    .test-row{
+        font-family: 'Neucha', cursive;
+    }
 
     #home {
-        padding-top: 200px;
         display: table;
         width: 100%;
         height: 100%;
@@ -89,7 +121,14 @@
         background-size: cover;
 
     }
+    
+    .center-text {
+        text-align: center;
+        vertical-align: middle;
+        display: table-cell;
 
+    }
+    
     h1 {
         font-family: 'Barrio', cursive;
         color: blue;
@@ -108,18 +147,17 @@
     }
     
      .row .glyphicon {
-        color: red;
-        margin-top: 30px;
+        color: #3a8cea;
+        margin-top: 3px;
     
     }
     .bg-pink {
-        background-color: #f6d4f4;
+        background-color: #fff0ef;
     }
 
     .bg-blue {
         background-color: #d8f0f3;
     }
-
     
 
     .row {
@@ -127,6 +165,15 @@
         margin-right: 50px;
         margin-bottom: 100px;
         text-align: center;
+    }
+    
+    /*.test {*/
+    /*    width: 100%;*/
+    /*    background-color: white;*/
+    /*}*/
+    
+    .row p {
+        font-size: 20px;
     }
 </style>
 <body>
@@ -164,7 +211,7 @@
 
 <!--Home Page-->
 <header id="home">
-    <div class="container">
+    <div class="center-text">
         <h1>Skydance Hot Air Balloon Rides</h1>      
         <h2>Ride with the wind.</h2>
         <h2>Dance with the sky.</h2>
@@ -172,19 +219,23 @@
 </header>
 
 <header id="info">
+    
     <div class="container bg-pink">
-
+        <div class= "test">
+             <h1>Info</h1>
+        </div>
+       
         <div class="row">
-            <h1>Info</h1>
+            
             <div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-0">
 
                 <h2><span class="glyphicon glyphicon-time"></span> <br><br> Time</h2>
                 <p>Due to climatic conditions, we can safely fly only in the early morning hours with our primary season and most beautiful months being May through November. Since our launch times vary through the seasons, we ask all our guests to call
                     ahead for the exact meeting time.</p>
-
+                 <br><br><br>
                 <h2><span class="glyphicon glyphicon-plane"></span> <br><br> Flight</h2>
                 <p>Our actual flight time is approximately one to one and a half hours averaging closer to one and a half hours and we suggest to allow three to three and a half hours for the entire adventure.</p>
-
+                 <br><br><br>
             </div>
 
             <div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-0">
@@ -192,7 +243,7 @@
                 <p>High winds and/or inclement weather prevent us from flying. We ask all our guests to contact us in the early afternoon prior to their scheduled flight between 12:00 noon and 2:00 p.m. to verify that the forecasted weather conditions will
                     allow their balloon flight.</p>
 
-
+                 <br><br><br>
                 <h2><span class="glyphicon glyphicon-bullhorn"></span> <br><br> Participation</h2>
                 <p>We encourage all of our guests, if they wish, to participate in both the inflation and deflation of the balloon. We have found it adds greatly to the fun of the entire ballooning experience.</p>
 
@@ -203,71 +254,72 @@
     </div>
 </header>
 
-<header id="gallary">
+<header id="gallery">
     <div class="container">
-        <h1>Gallery</h1>
+        <div class="row">
+            <h1>Gallery</h1>
 
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-                <li data-target="#myCarousel" data-slide-to="4"></li>
-                <li data-target="#myCarousel" data-slide-to="5"></li>
-            </ol>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                </ol>
 
-            <div class="carousel-inner">
+                <div class="carousel-inner">
 
-                <div class="item active">
-                    <img src="balloon-6.jpg" alt="" style="width:100%;">
-                    <div class="carousel-caption">
+                    <div class="item active">
+                        <img src="https://raw.githubusercontent.com/bmuellerhstat/shabr/master/img/balloon-2.jpg" alt="" style="width:100%;">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://raw.githubusercontent.com/bmuellerhstat/shabr/master/img/balloon-3.jpg" alt="" style="width:100%;">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://raw.githubusercontent.com/bmuellerhstat/shabr/master/img/balloon-4.jpg" alt="" style="width:100%;">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://raw.githubusercontent.com/bmuellerhstat/shabr/master/img/balloon-5.jpg" alt="" style="width:100%;">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://raw.githubusercontent.com/bmuellerhstat/shabr/master/img/balloon-1.jpg" alt="" style="width:100%;">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://raw.githubusercontent.com/bmuellerhstat/shabr/master/img/balloon-6.jpg" alt="" style="width:100%;">
+                        <div class="carousel-caption">
+                        </div>
+
                     </div>
                 </div>
 
-                <div class="item">
-                    <img src="balloon-1.jpg" alt="" style="width:100%;">
-                    <div class="carousel-caption">
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img src="balloon-2.jpg" alt="" style="width:100%;">
-                    <div class="carousel-caption">
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img src="balloon-3.jpg" alt="" style="width:100%;">
-                    <div class="carousel-caption">
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img src="balloon-4.jpg" alt="" style="width:100%;">
-                    <div class="carousel-caption">
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img src="balloon-5.jpg" alt="" style="width:100%;">
-                    <div class="carousel-caption">
-                    </div>
-                </div>
-
-            </div>
-
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
       <span class="sr-only">Previous</span>
     </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right"></span>
       <span class="sr-only">Next</span>
     </a>
+            </div>
         </div>
     </div>
-
 
 
 </header>
@@ -275,27 +327,8 @@
 <header id="testimonial">
     <div class="container bg-blue">
         <h1>Testimonial</h1>
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="jumbotron">
-                    <p>"Thank you for a wonderful memory. I was smiling the entire time. We shall always cherish that morning!" -- Joan H.</p>
-                </div>
-
-                <div class="jumbotron">
-                    <p>"I haven't come down to earth since our balloon ride. We are so pleased that we chose SHABR." -- Marsha N.</p>
-                </div>
-
-                <div class="jumbotron">
-                    <p>"What an awesome way to remember my anniversary! I know I will always remember this experience. Thank you again!" -- Mary C.</p>
-                </div>
-
-            </div>
-
-            <div class="col-sm-6">
-                <div class="jumbotron">
-                    <p>"What an experience!! I can't stop talking about it with my family. Thank you for the life-long memory!" -- Tammy P.</p>
-                </div>
-
+        <div class="test-row">
+            <div class="col-md-4">
                 <div class="jumbotron">
                     <p>"Thanks so much for making our experience so perfect. I definitely want to go back again! -- Linda T.</p>
                 </div>
@@ -303,14 +336,34 @@
                 <div class="jumbotron">
                     <p>"Thank you so much for the experience. It was delightful - awesome - wonderful - I will never forget my 80th Birthday!" -- Ethel E.</p>
                 </div>
+            </div>
 
+            <div class="col-md-4">
+                <div class="jumbotron">
+                    <p>"Thank you for a wonderful memory. I was smiling the entire time. We shall always cherish that morning!" -- Joan H.</p>
+                </div>
+
+                <div class="jumbotron">
+                    <p>"I haven't come down to earth since our balloon ride. We are so pleased that we chose SHABR." -- Marsha N.</p>
+                </div>
             </div>
 
 
 
+            <div class="col-md-4">
+                <div class="jumbotron">
+                    <p>"What an awesome way to remember my anniversary! I know I will always remember this experience. Thank you again!" -- Mary C.</p>
+                </div>
+
+                <div class="jumbotron">
+                    <p>"What an experience!! I can't stop talking about it with my family. Thank you for the life-long memory!" -- Tammy P.</p>
+                </div>
+            </div>
+
 
         </div>
     </div>
+   
 </header>
 
 
@@ -344,3 +397,5 @@
 </body>
 
 </html>
+
+<!--http://bootstrap3-menu.codedorigin.com/#-->
