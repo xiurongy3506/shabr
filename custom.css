@@ -14,7 +14,7 @@
              margin: 5%;
          }
          h2 {
-             font-size: 30px;
+             font-size: 25px;
          }
          .row .glyphicon {
              font-size: 60px;
@@ -32,7 +32,7 @@
         font-size: 55px;
       }
       h2 {
-        font-size: 35px;
+        font-size: 30px;
       }
        .row .glyphicon {
         font-size: 60px;
@@ -49,7 +49,7 @@
         font-size: 65px;
       }
       h2 {
-        font-size: 40px; 
+        font-size: 35px; 
       }
       .row .glyphicon {
         font-size: 70px;
@@ -72,7 +72,7 @@
         font-size: 75px;
       }
       h2 {
-        font-size: 45px; 
+        font-size: 40px; 
       }
       .row .glyphicon {
         font-size: 90px;
@@ -87,7 +87,7 @@
         width: 100%;
     }
     
-    .color-row{
+    .jumbotron p{
         font-family: 'Neucha', cursive;
     }
 
@@ -143,10 +143,15 @@
      }
      
       #fun-for-everyone {
-         background: linear-gradient( rgba(246, 254, 255, 0.5),
+        background: linear-gradient( rgba(246, 254, 255, 0.75),
         rgba(246, 240, 255, 0.75)),
         url(./img/balloon-3.jpg) no-repeat center center fixed;
         background-size: cover;
+        padding-bottom: 5%
+    }
+    
+     th h2 {
+        margin: 10%;
     }
        
       #contact {
@@ -178,3 +183,5 @@
         color: black;
         text-align: center;
     }
+    
+   
